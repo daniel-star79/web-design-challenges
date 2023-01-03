@@ -1,0 +1,278 @@
+/*Generals*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca:wght@700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 245, 255);
+}
+
+.main-container {
+    margin: 200px auto;
+    width: 1440px;
+    height: 750px;
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Menu Container options */
+.menu-container {
+    display: inline-block;
+    width: 35%;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+.menu-container__step {
+    display: flex;
+    padding: 20px;
+
+}
+
+.menu-container__steps__number {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 10px;
+    float: left;
+    margin: auto;
+}
+
+.menu-container__step__text {
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.menu-container__steps__step-option {
+    color: gray;
+    font-size: px;
+
+}
+
+.menu-container__steps__option {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container__steps__option {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container__steps__option:focus-visible {
+    color: black;
+}
+
+/*INfo content*/
+.side {
+    display: inline-block;
+    width: 65%;
+    color: black;
+    padding: 50px 180px;
+}
+
+.side__tittle {
+    color: #0D4578;
+    font-size: 50px;
+}
+
+.side__head-text {
+    color: #919296;
+    line-height: 50px;
+}
+
+form {
+    margin-top: 36px;
+    font-size: 25px;
+}
+.side__buttones-container__go-back{
+    text-decoration: none;
+    color:gray;
+    
+}
+/* form */
+form input {
+    color: #0D4578;
+    font-size: 25px;
+    display: block;
+    line-height: 3.5rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+form label {
+    color: #0D4578;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.side__buttons-container {
+    position: absolute;
+    top: 900px;
+}
+
+.side__buttones-container__next-step {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #223EAD;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    left: 550px;
+}
+
+/* hide html element */
+.hide {
+    display: none;
+}
+
+.show-selection {
+    color: black;
+    background-color: aqua;
+}
+
+/* step 2 */
+.side__plans {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side__plans>a:nth-child(2) {
+    margin: 0px 18px;
+}
+
+.side__plans__name-plan {
+    position: relative;
+    top: 90px;
+    color: #0D4578;
+    font-size: 28px;
+}
+
+.side__plans__price {
+    position: relative;
+    top: 100px;
+    color: #919296;
+    font-size: 20px;
+}
+
+.side__plans__image-icon {
+    width: 80px;
+    height: 80px;
+
+}
+
+.side__plan {
+    display: block;
+    width: 200px;
+    height: 250px;
+    border: solid 1px #919296;
+    border-radius: 12px;
+    padding: 25px;
+    text-decoration: none;
+}
+
+/* edit buttons*/
+
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.schedule a {
+    color: #919296;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.box-seletor {
+    width: 80px;
+    height: 30px;
+    background-color: #0D4578;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 1rem 1.2rem;
+}
+
+.box-seletor div {
+    width: 30px;
+    height: 30px;
+    background-color: #919296;
+    border-radius: 100px;
+    margin: 0px 3px;
+}
+
+
+
+/*Picks Style*/
+.picks-container {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.pickones-options {
+    display: block;
+    border: solid 2px black;
+    border-radius: 12px;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+
+.picks-text-container {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.input-pick {
+    height: 25px;
+    width: 25px;
+    vertical-align: super;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pick-price {
+    display: inline-block;
+    position: relative;
+    left: 130px;
+    bottom: 15px;
+    color: #0D4578;
+}
+
+.tittle-pickone {
+    color: #0D4578;
+}
+
+.text-pickone {
+    color: gray;
+}
