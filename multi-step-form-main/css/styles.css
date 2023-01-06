@@ -72,11 +72,7 @@ body {
 .menu-container__steps__option {
     color: white;
     text-decoration: none;
-}
-
-.menu-container__steps__option {
-    color: white;
-    text-decoration: none;
+    cursor: default;
 }
 
 .menu-container__steps__option:focus-visible {
@@ -102,14 +98,17 @@ body {
 }
 
 form {
+    position: relative;
     margin-top: 36px;
     font-size: 25px;
 }
-.side__buttones-container__go-back{
+
+.side__buttones-container__go-back {
     text-decoration: none;
-    color:gray;
-    
+    color: gray;
+
 }
+
 /* form */
 form input {
     color: #0D4578;
@@ -119,9 +118,19 @@ form input {
     padding-left: 10px;
     border-radius: 10px;
     width: 100%;
+    cursor: pointer;
+    border: solid 1px #D8D8D8;
 }
 
+form .input-text-form:focus {
+    outline: none;
+    border: solid 1px #0D4578;
+}
+
+
+
 form label {
+    float: left;
     color: #0D4578;
     display: block;
     margin-bottom: 10px;
@@ -136,12 +145,13 @@ form label {
 .side__buttones-container__next-step {
     color: white;
     font-size: 25px;
+    width: 125px;
     text-decoration: none;
     background-color: #223EAD;
     border-radius: 12px;
     padding: 20px;
-    position: relative;
-    left: 550px;
+    position: absolute;
+    left: 600px;
 }
 
 /* hide html element */
@@ -168,14 +178,14 @@ form label {
 
 .side__plans__name-plan {
     position: relative;
-    top: 90px;
+    top: 70px;
     color: #0D4578;
     font-size: 28px;
 }
 
 .side__plans__price {
     position: relative;
-    top: 100px;
+    top: 80px;
     color: #919296;
     font-size: 20px;
 }
@@ -188,12 +198,16 @@ form label {
 
 .side__plan {
     display: block;
-    width: 200px;
-    height: 250px;
-    border: solid 1px #919296;
+    width: 160px;
+    height: 210px;
+    border: solid 2px #919296;
     border-radius: 12px;
     padding: 25px;
     text-decoration: none;
+}
+
+.side__plan-selected{
+    border:solid 2px #0D4578;
 }
 
 /* edit buttons*/
@@ -205,33 +219,43 @@ form label {
     margin-top: 50px;
 }
 
+
 .schedule a {
     color: #919296;
     font-size: 20px;
     text-decoration: none;
 }
+.montly-schedule:focus{
+    color: #0D4578;
+}
 
+.yearly-schedule:focus{
+    color: #0D4578;
+}
 .box-seletor {
     width: 80px;
     height: 30px;
     background-color: #0D4578;
     border-radius: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 4px;
     margin: 1rem 1.2rem;
+    padding-top: 5px;
 }
 
-.box-seletor div {
-    width: 30px;
-    height: 30px;
-    background-color: #919296;
+
+.box-seletor button {
+    width: 25px;
+    height: 25px;
+    background-color:#0D4578;
     border-radius: 100px;
-    margin: 0px 3px;
+    border: none;
+    outline: none;
+    cursor: default;
 }
 
-
+.box-seletor > button:first-child{
+    background-color: white;
+}
 
 /*Picks Style*/
 .picks-container {
@@ -241,6 +265,7 @@ form label {
 
 .pickones-options {
     display: block;
+    position:relative;
     border: solid 2px black;
     border-radius: 12px;
     margin: 10px 0px;
@@ -263,9 +288,9 @@ form label {
 
 .pick-price {
     display: inline-block;
-    position: relative;
-    left: 130px;
-    bottom: 15px;
+    position: absolute;
+    right:10px;
+    bottom: 32px;
     color: #0D4578;
 }
 
@@ -275,4 +300,28 @@ form label {
 
 .text-pickone {
     color: gray;
+}
+
+
+label {
+    display: inline-block;
+}
+.messageError{
+    position: absolute;
+    right: 0;
+    color :red;
+    opacity: 0;
+}
+.show-messageError{
+    opacity: 1;
+}
+.side__section {}
+
+
+.input-empty {
+    border: 2px solid red;
+}
+
+.pickones-options:{
+
 }

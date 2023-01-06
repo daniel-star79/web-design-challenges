@@ -66,11 +66,14 @@
           </p>
           <form action="" class="form-info">
             <label for="">Name</label>
-            <input type="text">
+            <label for="" class="messageError">This field is requerid</label>
+            <input type="text" class="input-text-form">
             <label for="">Email Address</label>
-            <input type="text">
+            <label for="" class="messageError">This field is requerid</label>
+            <input type="text" class="input-text-form">
             <label for="">Phone Number</label>
-            <input type="text">
+            <label for="" class="messageError">This field is requerid</label>
+            <input type="text" class="input-text-form">
           </form>
           <div class="side__buttons-container">
             <a href="#" class="side__buttones-container__next-step">Next Step</a>
@@ -88,25 +91,25 @@
               <img class="side__plans__image-icon" src="assets/images/icon-arcade.svg" alt="Arcade">
               <h3 class="side__plans__name-plan">Arcade</h3>
               <h4 class="side__plans__price">$9/month</h4>
-            </a href="#">
+            </a>
             <a href="#" class="side__plan">
               <img class="side__plans__image-icon" src="assets/images/icon-advanced.svg" alt="arcade">
               <h3 class="side__plans__name-plan">Advanced</h3>
               <h4 class="side__plans__price">$12/month</h4>
-            </a href="#">
+            </a>
             <a href="#" class="side__plan">
               <img class="side__plans__image-icon" src="assets/images/icon-pro.svg" alt="arcade">
               <h3 class="side__plans__name-plan">Pro</h3>
               <h4 class="side__plans__price">$15/month</h4>
-            </a href="#">
+            </a>
           </div>
           <div class="schedule">
-            <a href="#" class="montly-schedule">Montly</a>
+            <a href="#" class="montly-schedule" onclick="showBaubleMontly()">Montly</a>
             <div class="box-seletor">
-              <div class="Montly-opction"></div>
-              <div class="Yearly-option"></div>
+              <button class="Montly-opction"></button>
+              <button class="Yearly-option" ></button>
             </div>
-            <a href="#" class="yearly-schedule">Yearly</a>
+            <a href="#" class="yearly-schedule" onclick="showBaubleYearly()">Yearly</a>
           </div>
           <div class="side__buttons-container">
             <a href="#" class="side__buttones-container__go-back">Go Back</a>
@@ -122,40 +125,49 @@
             Add-ons help enhance your gaming experience.
           </p>
           <div class="picks-container">
-          <span class="pickones-options">
-            <input type="checkbox" class="input-pick">
-            <div class="picks-text-container">
-            <h3 class="tittle-pickone">Online service</h3>
-            <h4 class="text-pickone">Access to multiplayer games</h4>
-            </div>
-            <p class="pick-price">+$1/mo</p>
-          </span>
-          <span class="pickones-options">
-            <input type="checkbox" class="input-pick">
-            <div class="picks-text-container">
-            <h3 class="tittle-pickone">Online service</h3>
-            <h4 class="text-pickone">Access to multiplayer games</h4>
-            </div>
-            <p class="pick-price">+$1/mo</p>
-          </span>
-          <span class="pickones-options">
-            <input type="checkbox" class="input-pick">
-            <div class="picks-text-container">
-            <h3 class="tittle-pickone">Online service</h3>
-            <h4 class="text-pickone">Access to multiplayer games</h4>
-            </div>
-            <p class="pick-price">+$1/mo</p>
+            <span class="pickones-options">
+              <input type="checkbox" class="input-pick">
+              <div class="picks-text-container">
+                <h3 class="tittle-pickone">Online service</h3>
+                <h4 class="text-pickone">Access to multiplayer games</h4>
+              </div>
+              <p class="pick-price">+$1/mo</p>
             </span>
-        </div>
+            <span class="pickones-options">
+              <input type="checkbox" class="input-pick">
+              <div class="picks-text-container">
+                <h3 class="tittle-pickone">Larger Storage</h3>
+                <h4 class="text-pickone">Extra 1TB of cloud save</h4>
+              </div>
+              <p class="pick-price">+$2/mo</p>
+            </span>
+            <span class="pickones-options">
+              <input type="checkbox" class="input-pick">
+              <div class="picks-text-container">
+                <h3 class="tittle-pickone">Customizable Profile</h3>
+                <h4 class="text-pickone">Custom theme on your profile</h4>
+              </div>
+              <p class="pick-price">+$2/mo</p>
+            </span>
+          </div>
           <div class="side__buttons-container">
             <a href="#" class="side__buttones-container__go-back">Go Back</a>
             <a href="#" class="side__buttones-container__next-step">Next Step</a>
           </div>
         </div>
-
       </article>
       <article class="side__section">
-        <h2 class="side__tittle">Summary</h2>
+        <div class="side__info-tittle">
+          <h2 class="side__tittle">Finishing Up</h2>
+          <p class="side__head-text">
+            Double-check everything looks OK before confirming.
+          </p>
+         
+          <div class="side__buttons-container">
+            <a href="#" class="side__buttones-container__go-back">Go Back</a>
+            <a href="#" class="side__buttones-container__next-step">Confirm</a>
+          </div>
+        </div>
       </article>
     </aside>
   </main>
